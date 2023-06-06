@@ -1,4 +1,4 @@
-package sem2;
+package sem2.task1;
 
 public abstract class Actor implements ActorBehavior{
 

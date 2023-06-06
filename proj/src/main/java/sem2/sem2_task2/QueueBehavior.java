@@ -1,6 +1,6 @@
-package sem2_task2;
+package sem2.sem2_task2;
 
-import sem2.Actor;
+import sem2.task1.Actor;
 
 public interface QueueBehavior {
     void takeInQueue(Actor actor); // добавление в очередь
