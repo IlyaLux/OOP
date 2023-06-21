@@ -24,7 +24,7 @@ public class Main {
         teacherView.sendOnConsole(SortType.ID);
 
         // Создадим учебную группу и сразу привлечем свободных преподавателей и студентов
-        classView.createAndPopulate("Когтепрыг");
+        classView.createAndPopulate("Археологический");
         classView.sendOnConsole(SortType.TEAM_ID);
 
         // Увеличим лимит преподавателей у созданной группы (id, новый лимит)
@@ -36,16 +36,15 @@ public class Main {
         classView.sendOnConsole(SortType.TEAM_ID);
 
         // Примем в наше заведение больше студентов и преподавателей
-        studentView.create("Гарри Поттер", 16, "452-4077");
+        studentView.create("Прохор Шаляпин", 16, "452-4077");
         studentView.createRandom(280);
         teacherView.createRandom(12);
 
-        // Рандомно заполним свободные учебные группы
+        // Заполним свободные учебные группы
         studentClassGroupRandomizer.populateAllStudentClasses();
         classView.sendOnConsole(SortType.TEAM_ID);
 
-        // Куда же попал Поттер на этот раз?
-        classView.sendOnConsole(SortType.NONE, "Гарри Поттер");
+                classView.sendOnConsole(SortType.NONE, "Прохор Шаляпин");
     }
 
 }

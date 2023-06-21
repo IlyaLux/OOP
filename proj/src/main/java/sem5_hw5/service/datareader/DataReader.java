@@ -19,7 +19,7 @@ public class DataReader {
     private final List<List<String>> listNames;
     private final List<String> studentClassNames;
 
-    private final String pathToFiles = "jetbrains://idea/navigate/reference?project=OOP&fqn=sem5_hw5.repository.data";
+    private final String pathToFiles = "proj/src/main/java/sem5_hw5/repository/data/";
 
     public DataReader() throws IOException {
         this.loadedMenFirstNames = new ArrayList<>();
