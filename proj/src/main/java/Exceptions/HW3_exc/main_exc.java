@@ -24,7 +24,7 @@ import java.util.HashMap;
 // При возникновении проблемы с чтением-записью в файл, исключение должно быть корректно обработано, пользователь должен увидеть стектрейс ошибки.
 
 
-public class HW3_28_08_2023 {
+public class main_exc {
 
     public static void main(String[] args) {
         StrParsData parsData = new StrParsData();
