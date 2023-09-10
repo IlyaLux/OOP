@@ -58,8 +58,8 @@ public class StrParsData {
         }
         String[] fullName = String.valueOf(sb).split(" ");
         if (fullName.length == 3) {
-            dataDic.put("2_firstName", fullName[1]);    // Преимущество такого алгоритма в том, что дату, тел. и пол,
-            dataDic.put("1_lastName", fullName[0]);     // можно вставлять и между Ф И О
+            dataDic.put("2_firstName", fullName[1]);
+            dataDic.put("1_lastName", fullName[0]);
             dataDic.put("3_patronymic", fullName[2]);
         }
         return dataDic;
