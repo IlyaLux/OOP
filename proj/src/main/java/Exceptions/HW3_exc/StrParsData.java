@@ -23,7 +23,6 @@ public class StrParsData {
                     }
                 }
             } else if (i.matches("\\d{1,2}\\.\\d{1,2}\\.\\d{4}")) {
-                String[] arrayDate = i.split("\\.");
                 try {
                     DateFormat df = new SimpleDateFormat("dd.MM.yyyy");
                     df.setLenient(false);
@@ -47,7 +46,7 @@ public class StrParsData {
             } else if (i.matches("[0-9]+")) {
                 dataDic.put("5_tel", i);
             } else if (i.matches("[A-Za-zА-Яа-я]+")) {
-                sb.append(i + " ");
+                sb.append(i).append(" ");
             } else {
                 try {
                     throw new DataExc();
@@ -65,6 +64,4 @@ public class StrParsData {
         return dataDic;
     }
 
-    private void assertEquals(String s, String format) {
-    }
 }
